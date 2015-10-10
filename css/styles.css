@@ -29,4 +29,13 @@ textarea {
 	background-repeat: no-repeat;
 	background-position: fixed;
 	background-size: 100%;
+	margin: 0 auto;
+
+	
+
+}
+
+.header {
+	min-height: 350px;
+
 }
