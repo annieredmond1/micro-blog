@@ -1,14 +1,29 @@
 body {
   color: #333;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Permanent Marker', cursive;
   background-color: skyblue; /* Sanity Check! */
 }
 
 h1 {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
+  color: #3B3C8F;
+  font-size: 100px;
 }
 
 h3 {
 	text-align: center;
+	color: 	#3B3C8F;
+	font-size: 30px;
+}
+
+.blogPosts {
+	padding: 30px;
+}
+
+.heading {
+	background-image: url('http://thumbs.dreamstime.com/t/stunning-long-exposure-seascape-image-calm-ocean-sunset-beautiful-42934493.jpg');
+	background-repeat: no-repeat;
+	background-position: fixed;
+	background-size: 100%;
 }
