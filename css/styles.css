@@ -17,9 +17,12 @@ h3 {
 	font-size: 30px;
 }
 
-.blogPosts {
-	padding: 30px;
+
+textarea {
+	width: 500px;
+	resize: none;
 }
+
 
 .heading {
 	background-image: url('http://thumbs.dreamstime.com/t/stunning-long-exposure-seascape-image-calm-ocean-sunset-beautiful-42934493.jpg');

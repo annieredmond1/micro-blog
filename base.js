@@ -44,7 +44,7 @@ var postNumber;
  		//add one to the count
  		postCount++;
  		postNumber = postCount;
- 		$('#allPosts').prepend("<div><form class='blogPosts'>" + "Post " + postCount + ":  " + blogText + "       Posted at:  " + blogTime + "</form>" + commentDiv + commentInput + commentButton + "</div>");
+ 		$('#allPosts').prepend("<div><form class='blogPosts'>" + "<font size='4'><big>Post " + postCount + ":<br></big>  " + blogText + "<br><em>Posted at:  " + blogTime + "</em><hr><big>Comments:</big><br></font></form>" + commentDiv + commentInput + commentButton + "</div>");
  		
  		console.log(blogText + " " + blogTime);
  	}
@@ -66,7 +66,7 @@ var commentBody;
  	 	console.log(this);
  	 // $(this).parent().find('.allComments').append(commentBody +"<br>");
  	if(commentBody) {
- 		$(this).parent().find('.allComments').append(commentBody + "<br>");
+ 		$(this).parent().find('.allComments').append("<font size='3'>" + commentBody + "</font><br><br><br>");
  	}
  	// Post.comments.push(commentBody);
  	console.log("hello" + commentBody);
