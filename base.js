@@ -35,7 +35,7 @@ var postNumber;
  	//variable for the comment input form
  	commentInput = "<form type='text' class='commentInput'><input type='text' class='form-control commentText' placeholder='Type your comment here...'>";
  	// //variable for the comment submit button
- 	commentButton = "<button type='submit' class='btn-group-xs'>Add Comment</button></form>";
+ 	commentButton = "<button type='submit' class='btn-group-xs pull-right'>Add Comment</button></form>";
  	//variable for the div to hold the comments
  	commentDiv = "<div class='col-md-8 col-md-offset-2 allComments'></div>";
 
@@ -44,7 +44,7 @@ var postNumber;
  		//add one to the count
  		postCount++;
  		postNumber = postCount;
- 		$('#allPosts').prepend("<div><form class='blogPosts'>" + "<font size='4'><big>Post " + postCount + ":<br></big>  " + blogText + "<br><em>Posted at:  " + blogTime + "</em><hr><big>Comments:</big><br></font></form>" + commentDiv + commentInput + commentButton + "</div>");
+ 		$('#allPosts').prepend("<div><div class='specificPost'><form class='blogPosts'>" + "<font size='4'><big><strong>Post " + postCount + ":<br></strong></big>  " + blogText + "<br><em>Posted at:  " + blogTime + "</em></div><br><big><font color='#C6D4F1'>Comments:</font></big><br></font></form>" + commentDiv + commentInput + commentButton + "<hr></div>");
  		
  		console.log(blogText + " " + blogTime);
  	}
@@ -66,7 +66,7 @@ var commentBody;
  	 	console.log(this);
  	 // $(this).parent().find('.allComments').append(commentBody +"<br>");
  	if(commentBody) {
- 		$(this).parent().find('.allComments').append("<font size='3'>" + commentBody + "</font><br><br><br>");
+ 		$(this).parent().find('.allComments').append("<div class='specificComment'><font size='3'>" + commentBody + "</font></div><br><br><br>");
  	}
  	// Post.comments.push(commentBody);
  	console.log("hello" + commentBody);

@@ -1,7 +1,7 @@
 body {
   color: #333;
-  font-family: 'Permanent Marker', cursive;
-  background-color: skyblue; /* Sanity Check! */
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #050624; /* Sanity Check! */
 }
 
 h1 {
@@ -9,12 +9,14 @@ h1 {
   text-align: center;
   color: #3B3C8F;
   font-size: 100px;
+  font-family: 'Permanent Marker', cursive;
 }
 
 h3 {
 	text-align: center;
 	color: 	#3B3C8F;
 	font-size: 30px;
+	font-family: 'Permanent Marker', cursive;
 }
 
 
@@ -39,3 +41,23 @@ textarea {
 	min-height: 350px;
 
 }
+
+.specificComment {
+	background-color: #A9BDDC;
+	border: 1px solid #A9BDDC;
+	border-radius: 30px;
+	padding: 20px;
+}
+
+.specificPost {
+	background-color: #A9BDDC;
+	border: 1px solid #A9BDDC;
+	border-radius: 30px;
+	padding: 20px;
+	margin: 20px;
+}
+
+
+
+
+
