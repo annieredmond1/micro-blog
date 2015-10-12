@@ -1,20 +1,20 @@
 body {
   color: #333;
   font-family: 'Montserrat', sans-serif;
-  background-image: url('http://a1star.com/images/starfiel.gif'); /* Sanity Check! */
+  background-image: url('http://img04.deviantart.net/c634/i/2011/192/2/5/playground_sand_texture_by_thesilentnight-d3n70sx.jpg'); /* Sanity Check! */
   padding: 20px;
 }
 
 h1 {
   margin-top: 50px;
   text-align: center;
-  color: rgba(255,255,255,.8);
+  color: rgba(0,0,0,.6);
   font-size: 100px;
 }
 
 h3 {
 	text-align: center;
-	color: rgba(255,255,255,.8);
+	color: rgba(0,0,0,.6);
 	font-size: 30px;
 	
 }
@@ -27,7 +27,7 @@ textarea {
 
 
 .heading {
-	background-image: url('http://a1star.com/images/starfiel.gif');
+	background-image: url('https://planningatuva.files.wordpress.com/2011/09/the-ocean.jpg');
 	background-repeat: no-repeat;
 	background-position: fixed;
 	background-size: 100%;
@@ -40,6 +40,9 @@ textarea {
 #blogText {
 	background-color: rgba(255,255,255,.6);
 }
+.commentText {
+	background-color: rgba(255,255,255,.6);
+}
 
 .header {
 	min-height: 350px;
@@ -48,14 +51,14 @@ textarea {
 
 .specificComment {
 	background-color: rgba(255,255,255,.6);
-	border: 1px solid #A9BDDC;
+	border: 1px solid black;
 	border-radius: 30px;
 	padding: 20px;
 }
 
 .specificPost {
 	background-color: rgba(255,255,255,.5);
-	border: 1px solid #A9BDDC;
+	border: 1px solid black;
 	border-radius: 30px;
 	padding: 20px;
 	margin: 20px;

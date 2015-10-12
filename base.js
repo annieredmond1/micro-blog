@@ -48,7 +48,7 @@ var newPost;
  		postNumber = postCount;
  		//create new obj with the post
  		newPost = new Post(blogText);
- 		$('#allPosts').prepend("<div><div class='specificPost'><form class='blogPosts'>" + "<font size='4'><big><strong>Post " + postCount + ":<br></strong></big>  " + blogText + "<br><small>Posted on:  " + blogTime + "</small></div><br><big><font color='#C6D4F1'>Comments:</font></big><br></font></form>" + commentDiv + commentInput + commentButton + "<hr></div>");
+ 		$('#allPosts').prepend("<div><div class='specificPost'><form class='blogPosts'>" + "<font size='4'><big><strong>Post " + postCount + ":<br></strong></big>  " + blogText + "<br><small>Posted on:  " + blogTime + "</small></div><br><big><font color='#1C1E22'>Comments:</font></big><br></font></form>" + commentDiv + commentInput + commentButton + "<hr></div>");
  	}
  	//reset the form to blank
  	$('#blogText').val("");
@@ -83,7 +83,7 @@ var commentBody;
  });
  }
  
-
+console.log(localStorage);
 
 });
 // 
