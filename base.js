@@ -29,7 +29,8 @@ var newPost;
  	var blogText = $('#blogText').val();
 
  	//variable for the time
- 	var blogTime = new Date();
+ 	var blogDate = new Date();
+ 	var blogTime = (blogDate.getMonth() + 1) + " / " + blogDate.getDate() + " / " + blogDate.getFullYear();
 
  	
 
@@ -47,7 +48,7 @@ var newPost;
  		postNumber = postCount;
  		//create new obj with the post
  		newPost = new Post(blogText);
- 		$('#allPosts').prepend("<div><div class='specificPost'><form class='blogPosts'>" + "<font size='4'><big><strong>Post " + postCount + ":<br></strong></big>  " + blogText + "<br><em>Posted at:  " + blogTime + "</em></div><br><big><font color='#C6D4F1'>Comments:</font></big><br></font></form>" + commentDiv + commentInput + commentButton + "<hr></div>");
+ 		$('#allPosts').prepend("<div><div class='specificPost'><form class='blogPosts'>" + "<font size='4'><big><strong>Post " + postCount + ":<br></strong></big>  " + blogText + "<br><small>Posted on:  " + blogTime + "</small></div><br><big><font color='#C6D4F1'>Comments:</font></big><br></font></form>" + commentDiv + commentInput + commentButton + "<hr></div>");
  	}
  	//reset the form to blank
  	$('#blogText').val("");
@@ -67,9 +68,11 @@ var commentBody;
  	e.preventDefault();
  	//get content of the comment
   	commentBody = $(this).parent().find('.commentText').val();
+  	var commentDate = new Date();
+ 	var commentTime = (commentDate.getMonth() + 1) + " / " + commentDate.getDate() + " / " + commentDate.getFullYear();
  	//if there's a value in the comment form, append it to the page
  	if(commentBody) {
- 		$(this).parent().find('.allComments').append("<div class='specificComment'><font size='3'>" + commentBody + "</font></div><br><br><br>");
+ 		$(this).parent().find('.allComments').append("<div class='specificComment'><font size='3'>" + commentBody + "<br><small>Commented on:  " + commentTime + "</small></font></div><br><br><br>");
  		
  	}
  	//push new comment into the post object
@@ -84,6 +87,7 @@ var commentBody;
 
 });
 // 
+
 
 
 
